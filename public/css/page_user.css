@@ -2,13 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 body {
     min-height: 100vh;
 }
-.img{
+.img {
     width: 150px;
 }
 
@@ -125,7 +125,7 @@ td {
     justify-content: center;
 }
 
-.container .header .nav .search input[type=text] {
+.container .header .nav .search input[type="text"] {
     border: none;
     background: #f1f1f1;
     padding: 10px;
@@ -249,13 +249,24 @@ td {
         height: 40px;
     }
     .side-menu li:hover {
-        background: #f05462;
+        background: white;
+        color: #f05462;
         padding: 8px 38px;
         border: 2px solid white;
+        border-radius: 10px;
+
+        transition: transform 1s; /* Ajout de la propriété transform dans la transition */
+        transform: translateY(
+            -10px
+        ); /* Utilisation de translateY pour déplacer l'élément verticalement */
+    }
+
+    .logo {
+        width: 130px;
     }
 }
 
-@media screen and (max-width:536px) {
+@media screen and (max-width: 536px) {
     .brand-name h1 {
         font-size: 16px;
     }
@@ -270,16 +281,25 @@ td {
     .container .content .content-2 .recent-payments table td:nth-child(2) {
         display: none;
     }
+
+    .logo {
+        width: 90px;
+    }
+    i:hover {
+        color: #f05462;
+    }
 }
 
+/*Animation*/
 @keyframes vibration {
-    0%, 100% {
-      transform: translateX(-2px);
+    0%,
+    100% {
+        transform: translateX(-2px);
     }
     50% {
-      transform: translateX(2px);
+        transform: translateX(2px);
     }
-  }
+}
 /*
  .user .img {
     animation: vibration 7s linear infinite;
@@ -295,28 +315,27 @@ img {
     cursor: pointer;
     animation: vibration 0.3s;
     animation-delay: 3s, 0, 3s;
-  }
+}
 
 .user .img:hover {
     animation: vibration 0.3s linear infinite;
     animation-delay: 3s, 0, 3s;
-  }
+}
 
 @keyframes vibration {
     0% {
-      transform: translateX(-2px);
+        transform: translateX(-2px);
     }
     25% {
-      transform: translateX(2px);
+        transform: translateX(2px);
     }
     50% {
-      transform: translateX(-2px);
+        transform: translateX(-2px);
     }
     75% {
-      transform: translateX(2px);
+        transform: translateX(2px);
     }
     100% {
-      transform: translateX(-2px);
+        transform: translateX(-2px);
     }
 }
-

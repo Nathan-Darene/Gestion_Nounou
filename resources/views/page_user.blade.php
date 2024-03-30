@@ -21,7 +21,7 @@
             <img src="{{ asset('Logo/8900808870_4aa536ff-86f5-4f1e-9429-0e0ace5a8068.png') }}" class="logo" />
         </div>
         <ul>
-            <li><i class="fa-solid fa-user"></i>&nbsp; <span>Profil</span> </li>
+            <li><i class="fa-solid fa-user"></i>&nbsp; <span>Profile</span> </li>
             <li><i class="fa-solid fa-clipboard-list"></i>&nbsp;<span>Dashboard</span> </li>
             <li><i class="fa-solid fa-bell"></i>&nbsp;<span>Notifications</span> </li>
             <li><i class="fa-solid fa-calendar-check"></i>&nbsp;<span>Agenda</span> </li>
@@ -175,6 +175,15 @@
             </div>
         </div>
     </div>
+
+     <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="{{ asset('js/profil.js')}}"></script>
+    <script src="{{ asset('js/message.js')}}"></script>
+
+
+
+
 </body>
 
 </html>

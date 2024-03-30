@@ -32,18 +32,18 @@ Route::get('/profile', [ProfileController::class, 'index'])->name('profile');
 Route::get('/message', [MessageController::class, 'message']);
 
 // Définir la route pour afficher le formulaire d'inscription
-/*Route::get('/inscription', [RegisterController::class, '])->name('insertedinscription');*/
+Route::get('/inscription', 'RegisterController@showRegistrationForm')->name('showRegistrationForm');
 
-Route::get('/inscription', [RegisterController::class, 'showRegistrationForm'])->name('inscription');
+/*Route::get('/inscription', [RegisterController::class, 'showRegistrationForm'])->name('inscription');*/
 
 Route::post('/inscription', 'RegisterController@register');
 
 /* */
 
 
-/*Route::get('/register', [RegisterController::class, 'create'])->name('register');
+Route::get('/register', [RegisterController::class, 'create'])->name('register');
 Route::post('/register', [RegisterController::class, 'store']);
-*/
+
 
 // Définir la route pour traiter le formulaire d'inscription
 Route::post('/inscription', [RegisterController::class, 'inscription']);

@@ -48,6 +48,9 @@ body {
 
 input[type="text"],
 input[type="email"],
+input[type="number"],
+input[type="date"],
+select,
 input[type="password"] {
     display: flex;
     flex-direction: column;
@@ -178,5 +181,3 @@ input[type="submit"]{
 button:active {
     transform: scale(0.9);
 }
-
-.login-form-button,
