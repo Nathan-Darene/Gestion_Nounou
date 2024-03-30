@@ -21,7 +21,7 @@ Route::get('/', function () {
 
 Route::get('/inscription',[PostController::class, 'inscription'],);
 
-Route::get('/connexion',[PostController::class, 'connexion'],);
+/*Route::get('/connexion',[PostController::class, 'connexion'],);
 
 Route::get('/deconnexion',[PostController::class, 'deconnexion'],);
 
@@ -31,7 +31,7 @@ Route::get('/dashboard',[PostController::class, 'dashboard'],);
 
 Route::get('/notification',[PostController::class, 'notification'],);
 
-
+*/
 
 
 
@@ -67,3 +67,22 @@ Route::get('/profil', function () {
 });
 
 /* Route vers la page d'inscription*/
+
+
+Route::get('/inscription', function () {
+    return view('inscription');
+});
+
+/*Route vers la page page_user */
+
+Route::get('/page_user', function () {
+    return view('page_user');
+});
+
+/*Route vers la page page_admin */
+
+Route::get('/page_admin', function () {
+    return view('page_admin');
+});
+
+/*Route vers la page page_admin */
